@@ -33,7 +33,7 @@ module.exports = class MenuDocsClient extends Client {
         this.defaultPerms = new Permissions(options.defaultPerms).freeze();
     }
 
-    async start(token = this.process.env.TOKEN) {
+    async start(token = this.TOKEN) {
         this.utils.loadCommands();
         this.utils.loadEvents();
 
